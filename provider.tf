@@ -8,5 +8,5 @@ provider "aws" {
   assume_role { 
   role_arn  = var.role_arn
  } 
- region   = "ap-south-1"
+ region   = var.region
 }
