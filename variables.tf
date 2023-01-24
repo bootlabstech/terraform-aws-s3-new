@@ -4,11 +4,11 @@ variable "bucket" {
 
 }
 
-# variable "region" {
-#   description = "The region where the bucket is created"
-#   type        = string
-
-# }
+variable "provider_region" {
+  description = "The region where the bucket is created"
+  type        = string
+  default = "us-east-1"
+}
 variable "versioning_enabled" {
   description = "Versioning for the bucket is enabled if set true"
   type        = bool
